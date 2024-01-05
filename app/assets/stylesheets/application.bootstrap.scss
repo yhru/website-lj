@@ -1,0 +1,68 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+.my-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.card {
+  margin: 0;
+  opacity: 0;
+  transform: translateY(40px) scale(1);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.card.animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(0) scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0;
+    width: 100%;
+    transform: none;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .logo-size {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .btn-contact {
+    width: 100%;
+  }
+}
+
+body {
+  background: url('papyrus.png') repeat;
+}
+
+.logo-size {
+  max-width: 100px;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.btn-contact {
+  background-color: #027a63;
+  border-color: #027a63;
+  color: white;
+
+  &:hover {
+    background-color: darken(#027a63, 10%);
+    border-color: darken(#027a63, 10%);
+  }
+}
