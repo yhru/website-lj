@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Lou Joseau - Avocate au Barreau d’Amiens</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lou Joseau - Avocate au Barreau d’Amiens</title>
+    <meta name="description" content="Lou Joseau, avocate pénaliste à Amiens, spécialisée en droit pénal et droit civil. Contactez-nous pour une consultation.">
+    <meta name="keywords" content="avocat pénaliste Amiens, Lou Joseau, droit pénal Amiens, avocat droit civil">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +12,20 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <%= favicon_link_tag asset_path('logo_white_transparent_background.ico') %>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lou Joseau - Avocate Pénaliste à Amiens">
+    <meta property="og:description" content="Lou Joseau, avocate pénaliste à Amiens, spécialisée en droit pénal et droit civil. Contactez-nous pour une consultation.">
+    <meta property="og:image" content="<%= asset_path 'lj2-remove.png' %>">
+    <meta property="og:url" content="http://www.votre-site.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lou Joseau - Avocate Pénaliste à Amiens">
+    <meta name="twitter:description" content="Lou Joseau, avocate pénaliste à Amiens, spécialisée en droit pénal et droit civil. Contactez-nous pour une consultation.">
+    <meta name="twitter:image" content="<%= asset_path 'lj2-remove.png' %>">
   </head>
 
   <body>
