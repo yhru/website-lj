@@ -72,3 +72,5 @@ group :test do
 end
 
 gem 'sitemap_generator'
+gem 'sass-rails', '>= 6'
+gem 'uglifier', '>= 4.1.20'
